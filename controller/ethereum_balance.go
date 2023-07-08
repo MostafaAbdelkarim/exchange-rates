@@ -18,7 +18,7 @@ func GetBalanceUsingAddress(c *fiber.Ctx) error {
 	address := c.Params("address")
 	defer cancel()
 
-	client, err := ethclient.Dial("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID")
+	client, err := ethclient.Dial("https://mainnet.infura.io/v3/")
 
 	if err != nil {
 		return errorHandler.HandleError(c, http.StatusConflict, err)
