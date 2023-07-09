@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "11738540-e838-4c56-bca4-865174b363df",
+		"name": "Exchange Rates",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20914284"
+	},
+	"item": [
+		{
+			"name": "Rates",
+			"item": [
+				{
+					"name": "Get Exchange Rate using Cryptocurrency and fiat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/rates/BTC/USD,EUR,GBP",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rates",
+								"BTC",
+								"USD,EUR,GBP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get history of Exchange rate using cryptocurrency and fiat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/rates/history/BTC/USD",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rates",
+								"history",
+								"BTC",
+								"USD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Exchange rate for cryptocurrency and all fiat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/rates/BTC",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rates",
+								"BTC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Exchange rates for crypto and fiat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/rates",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"rates"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Balance",
+			"item": [
+				{
+					"name": "Get Balance for Ethereum",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/balance/123456789",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"balance",
+								"123456789"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
